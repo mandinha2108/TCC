@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GalloFlix</title>
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="">
+
+  <header class="container-fluid bg-dark">
+    <nav class="navbar navbar-dark bg-transparent fixed-top fundo py-0" aria-label="Navbar">
+      <div class="container-fluid">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark"
+          aria-controls="offcanvasNavbarDark" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="Logo" width="85">
+        </a>
+        <div class="fs-2 d-flex align-items-center">
+          <a href="#" class="text-white">
+            <i class="bi bi-person-fill"></i>
+          </a>
+          <span class="me-3"></span>
+        </div>
+      </div>
+    </nav>
+    <div class="offcanvas offcanvas-start text-bg-white" tabindex="-1" id="offcanvasNavbarDark"
+      aria-labelledby="offcanvasNavbarDarkLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">VestBooks</h5>
+        <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="d-flex justify-content-between gap-2 mb-4">
+          <a href="entrar.html" class="btn btn-primary w-100">Entrar</a>
+          <a href="cadastro.html" class="btn btn-primary w-100">Cadastrar</a>
+        </div>
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item fs-4">
+            <a class="nav-link active" aria-current="page" href="#">Vestibulares:</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ENEM</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">UNICAMP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">UNESP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">FUVEST</a>
+          </li>
+          <li class="nav-item fs-4">
+            <a class="nav-link" href="#">Sobre Nós</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="carousel" class="carousel carousel-fade slide bg-dark">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/banner/1.jpg" class="d-block w-100 opacity-25" alt="...">
+          <div class="carousel-caption">
+            <div class="logoinicio">
+              <img src="img/logo horizontal.png">
+              <p>"O melhor conteúdo, a sua melhor preparação."</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/banner/2.jpg" class="d-block w-100 opacity-25" alt="...">
+          <div class="carousel-caption">
+            <div class="logoinicio">
+              <img src="img/logo horizontal.png">
+              <p>"O melhor conteúdo, a sua melhor preparação."</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/banner/3.jpg" class="d-block w-100 opacity-25" alt="...">
+          <div class="carousel-caption">
+            <div class="logoinicio">
+              <img src="img/logo horizontal.png">
+              <p>"O melhor conteúdo, a sua melhor preparação."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container py-5 bg-white">
+      <div class="row featurette">
+        <div class="col-md-9">
+          <h2 class="featurette-heading fw-normal lh-1">Quem somos</h2>
+          <p class="lead">Nos chamamos Laura, Raquel,Louise e Amanda.
+            Esse é um site com informações sobre livros importantes para os vestibulares do estado de São Paulo.
+            Aqui você encontrará videoaulas, resumos, questões e análises de obras fundamentais para os vestibulares.
+            Queremos ajudar os estudantes a se prepararem de forma eficiente e prazerosa para as provas, tornando o
+            caminho do vestibular mais tranquilo e enriquecedor. Junte-se a nós nessa jornada pelo mundo da leitura e do
+            aprendizado.
+          </p>
+        </div>
+        <div class="col-md-3">
+          <img src="img/amigas.jpg" class="img-fluid">
+        </div>
+      </div>
+    </div>
+
+    <div class="container bg-white pt-4">
+      <div class="container">
+        <div class="text-center bg-info text-white py-2 fw-bold">
+          VESTIBULARES
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="livros" class="rowLivro my-3 p-2">
+          <a href='#'><img src="img/faculdades/ENEM.png" alt=""></a>
+          <a href='#'><img src="img/faculdades/UNICAMP.png" alt=""></a>
+          <a href='#'><img src="img/faculdades/UNESP.png" alt=""></a>
+          <a href='#'><img src="img/faculdades/USP.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container bg-white">
+      <div class="text-center bg-info text-white py-2 pw-bold">
+        Você sabia que os livros da FUVEST mudaram?
+      </div>
+      <div class="row featurette">
+        <div class="col-md-4 p-0 my-3">
+          <img src="img/ALUÍSIOREITOR.png" class="img-fluid">
+        </div>
+
+        <div class="col-md-7 p-0">
+          <p class="lead"><br><br> Essa mudança vai se estender até 2028, a partir de 2029, autores da literatura
+            brasileira
+            e de língua portuguesa voltam a aparecer na lista: Machado de Assis, Érico Veríssimo e Luís Bernardo Honwana
+            foram os escolhidos. Este será um ano em que a lista conterá quatro obras escritas por autoras e autores
+            negros
+          </p>
+
+          <p class="lead"> Além disso, Incidente em Antares, de Érico Veríssimo, foi uma obra escolhida por se
+            tratar de um representante
+            da literatura fantástica, uma novidade no vestibular.
+          </p>
+        </div>
+        <div class="col-md-7 p-4">
+          <p class="lead" style="font-size: 0.9em;"><br> (Pró-Reitor de Graduação da USP e membro do Conselho da
+            Fundação, Aluísio Cotrim Segurado)
+          </p>
+        </div>
+      </div>
+
+  </main>
+  <footer class="footer text-center">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <!-- Logo -->
+      <div class="logo mb-3 mb-md-0">
+        <img src="img/logo.png" alt="Vestbook Logo">
+      </div>
+
+      <!-- Acesso Rápido -->
+      <div class="mb-3 mb-md-0">
+        <h6 class="fw-bold">Entre em contato</h6>
+        <a href="#" class="icon">
+         <img src="img/instagram.png"> 
+        </a>
+        <a href="#" class="icon">
+          <img src="img/contato.png">
+        </a>
+      </div>
+
+      <!-- Links Importantes -->
+      <div>
+        <h6 class="fw-bold">Links importantes</h6>
+        <div><a href="#">política de cookies</a></div>
+        <div><a href="#">política de privacidade</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

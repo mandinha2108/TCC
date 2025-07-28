@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastrar</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="d-flex flex-column align-items-center justify-content-center min-vh-100">
+
+    <div class="azul-circle"></div>
+
+    <img src="img/LIVROsemfundo.png" alt="Livro" class="livro-img" />
+
+    <div class="cadastro-wrapper container">
+        <div class="row w-100 justify-content-center">
+            <div class="col-lg-5">
+                <a class="navbar-brand py-2 d-block text-center" href="#">
+                    <img src="img/logo horizontal.png" alt="Logo" width="350">
+                </a>
+                <div class="card shadow-lg border-0 rounded-lg">
+                    <div class="card-header">
+                        <h3 class="text-center font-weight-light my-4">Cadastre-se</h3>
+                    </div>
+                    <div class="card-body">
+                        <form method="post" action="/login">
+                            <input type="hidden" name="UrlRetorno" value="" />
+                            <div class="form-floating mb-3">
+                                <input
+                                    type="email"
+                                    class="form-control border border-primary border-2"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Digite seu email"
+                                />
+                                <label for="email">Nome de usuario</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input
+                                    type="password"
+                                    class="form-control border border-primary border-2"
+                                    id="senha"
+                                    name="senha"
+                                    placeholder="Digite sua senha"
+                                />
+                                <label for="senha">Senha</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input
+                                    type="name"
+                                    class="form-control border border-primary border-2"
+                                    id="nome"
+                                    name="nome"
+                                    placeholder="Digite seu nome completo"
+                                />
+                                <label for="email">Nome</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input
+                                    type="email"
+                                    class="form-control border border-primary border-2"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Digite seu email"
+                                />
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="lembrar" name="lembrar" />
+                                <label class="form-check-label" for="lembrar">Lembrar-me</label>
+                            </div>
+                            <div class="d-flex flex-column align-items-center justify-content-center mt-4 mb-0">
+                                <!-- <input type="submit" class="btn btn-primary w-100 mb-3" value="cadastre-se" /> -->
+                                <a href="index.html" class="btn btn-primary w-100 mb-3" >cadastre-se</a> 
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer text-center py-3">
+                        <div class="small">tem uma conta? <a href="entrar.html">Conecte-se</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

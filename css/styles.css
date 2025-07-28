@@ -1,0 +1,437 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap");
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    backdrop-filter: blur(1px);
+}
+
+.navbar-toggler {
+    border-radius: 10px;
+}
+
+.scrolled {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item,
+.carousel-caption {
+    height: 100vh;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: fill;
+}
+
+.logoinicio img {
+    width: 50%;
+    height: auto
+}
+
+
+.logoinicio {
+    width: auto;
+    height: 250px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rowLivro {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    justify-content: center;
+}
+
+.rowLivro a {
+    cursor: inherit;
+}
+
+.rowimg:hover {
+    transform: scale(1.10);
+}
+
+.rowLivro::-webkit-scrollbar {
+    display: none;
+}
+
+.rowLivro a img {
+    margin-right: 50px;
+    border-radius: 100%;
+    box-sizing: content-box;
+    transition: transform 450ms;
+    max-height: 400px;
+    object-fit: contain;
+    width: 200px;
+    padding: 20px;
+}
+
+
+.livro {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    justify-content: center;
+}
+
+.livro a {
+    cursor: inherit;
+}
+
+.livro a img {
+    width: 200px;
+    height: 300px;
+    object-fit: fill;
+    margin-right: 20px;
+    box-sizing: border-box;
+    transition: transform 450ms;
+    display: block;
+}
+
+.livro::-webkit-scrollbar {
+    display: none;
+}
+
+.autor a {
+    cursor: inherit;
+}
+
+.autor a img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    padding: 20px;
+    margin-right: 50px;
+    box-sizing: border-box;
+    transition: transform 450ms;
+    display: block;
+}
+
+.autor::-webkit-scrollbar {
+    display: none;
+}
+
+.autor {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    justify-content: center;
+}
+
+body {
+    position: relative;
+    background-color: white;
+}
+
+.blue-circle {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background-color: #aee0f7;
+    border-radius: 50%;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.book-img {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    z-index: 1;
+}
+
+.login-wrapper {
+    position: relative;
+    z-index: 2;
+    left: 7%;
+}
+
+.quiz-option:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.correct {
+    background-color: #d4edda !important;
+}
+
+.incorrect {
+    background-color: #f8d7da !important;
+}
+
+.video-thumbnail {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.video-thumbnail img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.video-list {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.container-pergunta {
+    max-width: 800px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background-color: #3b5998;
+    /* Dark blue similar to the image */
+    color: white;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 1.0em;
+    width: 150px;
+    margin-bottom: 20px;
+    margin-left: -20px;
+}
+
+.question-text {
+    border: 1px solid #dee2e6;
+    /* Light gray border for the text box */
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f0f8ff;
+    /* Light blue background for the text box */
+    border-radius: 0 0 5px 5px;
+}
+
+.passage-info {
+    font-size: 0.9em;
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #6c757d;
+}
+
+.instruction-text {
+    margin-bottom: 20px;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.options .list-group-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    color: #212529;
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+.options .list-group-item:hover {
+    background-color: #e9ecef;
+}
+
+.option-letter {
+    background-color: #3b5998;
+    /* Dark blue for the letter circle */
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 15px;
+    flex-shrink: 0;
+    /* Prevent the circle from shrinking */
+}
+
+/* Estilos para feedback de resposta */
+.list-group-item.correct {
+    background-color: #d4edda;
+    /* Verde claro */
+    border-color: #28a745;
+    /* Borda verde */
+    color: #155724;
+    /* Texto verde escuro */
+    pointer-events: none;
+    /* Desabilita cliques após seleção */
+}
+
+.list-group-item.incorrect {
+    background-color: #f8d7da;
+    /* Vermelho claro */
+    border-color: #dc3545;
+    /* Borda vermelha */
+    color: #721c24;
+    /* Texto vermelho escuro */
+    pointer-events: none;
+    /* Desabilita cliques após seleção */
+}
+
+.feedback-message {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+    /* Escondido por padrão */
+}
+
+.feedback-message.correct {
+    background-color: #28a745;
+    color: white;
+}
+
+.feedback-message.incorrect {
+    background-color: #dc3545;
+    color: white;
+}
+
+.answer-box {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.answer-button {
+    background-color: #3b5998;
+    /* Dark blue for the answer button */
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    border: none;
+    text-decoration: none;
+}
+
+.answer-button:hover {
+    background-color: #2a4980;
+    /* Azul um pouco mais escuro no hover */
+    transform: translateY(-2px);
+}
+
+.answer-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.azul-circle {
+    position: absolute;
+    width: 750px;
+    height: 750px;
+    background-color: #aee0f7;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.livro-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    z-index: 1;
+}
+
+.cadastro-wrapper {
+    position: center;
+    z-index: 2;
+}
+
+.footer {
+    background-color: #06599b;
+    /* Cor de fundo azul */
+    color: white;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .logo img {
+    max-height: 100px;
+}
+
+.footer .icon img {
+    max-width: 50px;
+    margin: 0 10px;
+}
+
+.bg-blue {
+    background-color: #0066a1;
+    /* azul das laterais */
+}
+
+.content {
+    background-color: white;
+    padding: 3rem 2rem;
+}
+
+.book-cover {
+    transform: rotate(15deg);
+    max-width: 250px; /* aumente esse valor conforme desejar */
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+    margin-right: 300px;
+}
+
+.mt-100 {
+    margin-top: 100px !important;
+}
+
+
+.rounded-circle {
+    margin: 9;
+    width: 100;
+    height: 100;
+}
+
+.subtitulolivros {
+    margin-top: 5;
+    font-weight: bold;     
+    color: #003366;       
+    font-size: 1.1rem;   }    
+  

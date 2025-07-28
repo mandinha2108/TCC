@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VestBooks</title>
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    .barraAzul {
+      position: absolute;
+      width: 100%;
+      top: 100px;
+      height: 100px;
+      background-color: #ff93b3;
+    }
+
+    .logoUSP {
+      position: absolute;
+      height: 600px;
+      top: -250px;
+      margin-left: calc(50% - 300px);
+    }
+    
+    .barrinha {
+      text-align: center;
+      justify-content: center;
+      font-weight: bold;
+      color: white;
+      background-color: #db4e78;
+      margin-top: 20px;
+      padding: 5px;
+    }
+    .barrona {
+      justify-content: center;
+      text-align: center;
+      background-color: #db4e78;
+      padding: 10px;
+      margin: 20px;
+      color: white;
+    }
+    
+    .quadradão {
+  background-color: #db4e78;
+  width: 100%;
+  height: auto; 
+  min-height: 400px;
+  margin: 0;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  padding: 20px;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+.textao {
+  width: 70%;
+  max-width: 600px;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: left; 
+  margin-left: 120px;
+}
+
+@media (max-width: 768px) {
+  .textao {
+    width: 100%;
+    left: 0;
+    margin-top: 20px;
+    padding: 15px;
+  }
+}
+    
+  </style>
+</head>
+
+<body>
+
+  <header class="container-fluid bg-dark mt-100">
+    <nav class="navbar navbar-dark bg-transparent fixed-top fundo py-0" aria-label="Navbar">
+      <div class="container-fluid">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark"
+          aria-controls="offcanvasNavbarDark" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="Logo" width="85">
+        </a>
+        <div class="fs-2 d-flex align-items-center">
+          <a href="#" class="text-white">
+            <i class="bi bi-person-fill"></i>
+          </a>
+          <span class="me-3"></span>
+        </div>
+      </div>
+    </nav>
+    <div class="offcanvas offcanvas-start text-bg-white" tabindex="-1" id="offcanvasNavbarDark"
+      aria-labelledby="offcanvasNavbarDarkLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">VestBooks</h5>
+        <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="d-flex justify-content-between gap-2 mb-4">
+          <a href="entrar.html" class="btn btn-primary w-100">Entrar</a>
+          <a href="cadastro.html" class="btn btn-primary w-100">Cadastrar</a>
+        </div>
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item fs-4">
+            <a class="nav-link active" aria-current="page" href="#">Vestibulares:</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ENEM</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">UNICAMP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">UNESP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">FUVEST</a>
+          </li>
+          <li class="nav-item fs-4">
+            <a class="nav-link" href="#">Sobre Nós</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="bg-white000">
+   
+        
+        <div class="container-fluid position-relative p-0" style="height: 300px;">
+          <div class="barraAzul">
+            <img src="img/faculdades/USP2.png" alt="Logo" class="img-fluid logoUSP">
+          </div>
+        </div>
+  
+
+        <div class="container text-center">
+          <div class="row featurette">
+            <div class="col-mt-12 py-5">
+              <p class="lead ">Além do objetivo de se adequar a Base Nacional Comum Curricular (BNCC) e às legislações vigentes, a Fuvest quer tornar seus alunos mais críticos e atualizados. A nova lista de leitura 
+                é justificada pela necessidade de se valorizar o papel das mulheres na literatura, não apenas como personagens, mas como autoras.
+              </p>
+            </div>
+         </div>
+          </div>          
+      
+          <div class="quadradão">
+            <div class="textao">
+              <p class="lead py-4">As questões de Literatura representam cerca de 30% das questões de Português, considerando as duas fases do processo seletivo da Fuvest.</p>
+              <p class="lead py-4">  Em 2026, foi divulgada a nova lista de leitura obrigatória que é composta somente por mulheres autoras de língua portuguesa brasileiras e estrangeiras</p>
+            </div>
+            </div>
+
+              <div class="barrinha ">
+                Livros
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div id="livros" class="livro mt-3 p-2">
+                    <a href='#'><img src="img/enem/livro/Capitães de Areia – Jorge Amado.jpg" alt=""></a>
+                    <a href='#'><img src="img/enem/livro/Dona Flor e seus dois maridos..jpg" alt=""></a>
+                    <a href='#'><img src="img/enem/livro/Estrela da Vida Inteira.jpg" alt=""></a>
+                    <a href='#'><img src="img/enem/livro/Gabriela, cravo e canela..jpg" alt=""></a>
+                    <a href='#'><img src="img/enem/livro/Grande Sertão Veredas.jpg" alt=""></a>
+                    <a href='#'><img src="img/enem/livro/Iracema.jpg" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="barrinha">
+              Principais Autores
+            </div>
+            <div class="row">
+              <div id="autor" class="autor mt-3 p-2">
+                <a href='#'><img src="img/enem/autor/jorge amado.jpg " alt=""></a>
+                <a href='#'><img src="img/enem/autor/jose de alencar.jpg" alt=""></a>
+                <a href='#'><img src="img/enem/autor/machado de assis.jpg" alt=""></a>
+                <a href='#'><img src="img/enem/autor/Manuel Bandeira.jpg" alt=""></a>
+              </div>
+
+              <div class="barrinha mb-5">
+                Vídeo Aula
+              </div>
+
+              <div class="row justify-content-center mb-5">
+                <div class="col-md-8">
+                  <div class="row">
+                    <!-- Vídeo principal -->
+                    <div class="col-md-9 mb-3">
+                      <div class="ratio ratio-16x9">
+                        <iframe id="mainVideo" src="https://www.youtube.com/embed/oxpXwPhc6Lo" allowfullscreen></iframe>
+                      </div>
+                    </div>
+
+                    <!-- Lista de vídeos com scroll -->
+                    <div style="width: 200px;" class="d-flex align-items-center">
+                      <div class="video-list w-100">
+                        <div class="video-thumbnail" onclick="changeVideo('rnpUJvVpngY')">
+                          <img src="https://img.youtube.com/vi/rnpUJvVpngY/0.jpg" alt="Vídeo 1">
+                        </div>
+                        <div class="video-thumbnail" onclick="changeVideo('M8h-WXKyLFc')">
+                          <img src="https://img.youtube.com/vi/M8h-WXKyLFc/0.jpg" alt="Vídeo 2">
+                        </div>
+                        <div class="video-thumbnail" onclick="changeVideo('mKR1Vkqxyjo')">
+                          <img src="https://img.youtube.com/vi/mKR1Vkqxyjo/0.jpg" alt="Vídeo 3">
+                        </div>
+                        <div class="video-thumbnail" onclick="changeVideo('Rfgy_g79ww4')">
+                          <img src="https://img.youtube.com/vi/Rfgy_g79ww4/0.jpg" alt="Vídeo 4">
+                        </div>
+                        <div class="video-thumbnail" onclick="changeVideo('V1s1a77PnOg')">
+                          <img src="https://img.youtube.com/vi/V1s1a77PnOg/0.jpg" alt="Vídeo 5">
+                          <div class="video-thumbnail" onclick="changeVideo('GyXglxNR5Ss')">
+                            <img src="https://img.youtube.com/vi/GyXglxNR5Ss/0.jpg" alt="Vídeo 6">
+                          </div>
+                          <div class="video-thumbnail" onclick="changeVideo('Yac_R3PlFeE')">
+                            <img src="https://img.youtube.com/vi/Yac_R3PlFeE/0.jpg" alt="Vídeo 7">
+                          </div>
+                          <div class="video-thumbnail" onclick="changeVideo('Cv-7AH2wTQQ')">
+                            <img src="https://img.youtube.com/vi/Cv-7AH2wTQQ/0.jpg" alt="Vídeo 8">
+                          </div>
+                          <div class="video-thumbnail" onclick="changeVideo('CWagtQP7hqw')">
+                            <img src="https://img.youtube.com/vi/CWagtQP7hqw/0.jpg" alt="Vídeo 9">
+                          </div>
+                          <div class="video-thumbnail" onclick="changeVideo('465n-yZqt6I')">
+                            <img src="https://img.youtube.com/vi/465n-yZqt6I/0.jpg" alt="Vídeo 10">
+                          </div>
+                          <div class="video-thumbnail" onclick="changeVideo('v6rjjpbeNBk')">
+                            <img src="https://img.youtube.com/vi/v6rjjpbeNBk/0.jpg" alt="Vídeo 11">
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <h4 class="barrona">COMO É COBRADO?</h4>
+
+                  <div class="bg-white shadow rounded p-4 mt-3">
+                    <p class="text-center fw-bold">ENEM 2011</p>
+                    <p>“Quem é pobre, porque se sujou, é um prisioneiro; vaga nas gerais, que nem os rios distantes de
+                      sua
+                      ligação. O cabaré tem o apito do trem, o sofá manchado. Dona Flor é toda cheia de vestidos, de
+                      coentro, de cheiros.”<br>
+                      (Amado, J. Dona Flor e seus dois maridos. São Paulo: Companhia das Letras, 1992.)</p>
+
+                    <p>No trecho citado, o autor representa uma situação desencantada da mulher brasileira dos anos
+                      1940,
+                      tratando com humor a sensualidade e os conflitos sociais que envolvem essa época.</p>
+
+                    <div id="quiz-options" class="mt-4">
+                      <div class="quiz-option border rounded p-2 mb-2" onclick="checkAnswer(this, 'A')">A) Relata a vida
+                        feliz e harmoniosa de mulheres da década de 1940, demonstrando que não havia disposição em
+                        superar
+                        essa época.</div>
+                      <div class="quiz-option border rounded p-2 mb-2" onclick="checkAnswer(this, 'B')">B) Mostra um
+                        posicionamento progressista e feminista do autor diante da condição da mulher no século XXI.
+                      </div>
+                      <div class="quiz-option border rounded p-2 mb-2" onclick="checkAnswer(this, 'C')">C) Denuncia a
+                        falta de comprometimento e a desvalorização das mulheres, que eram excluídas dos espaços sociais
+                        e
+                        políticos.</div>
+                      <div class="quiz-option border rounded p-2 mb-2" onclick="checkAnswer(this, 'D')">D) Mantém o
+                        distanciamento narrativo coerente com sua posição social, de espectador da forma.</div>
+                    </div>
+
+                    <div id="feedback" class="mt-3 fw-bold text-center"></div>
+                    <div class="text-center mt-4">
+                      <a href="perguntas.html" class="barrona">Clique aqui para mais perguntas</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+    </section>
+
+  </main>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script> 
+</body>
+
